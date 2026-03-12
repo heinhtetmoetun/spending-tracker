@@ -11,7 +11,7 @@ function App() {
         <Navigation />
 
         <Routes>
-          {/* ✅ Redirect root to dashboard */}
+          {/* Redirect root to dashboard */}
           <Route path="/" element={<Navigate to="/dashboard" replace />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/journal" element={<Journal />} />
@@ -30,6 +30,11 @@ function App() {
           <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
             <p style={{ margin: "0", fontSize: "1rem", opacity: "0.9" }}>
               © 2025 Spending Tracker - Track your expenses, achieve your goals
+            </p>
+
+            {/* Your info */}
+            <p style={{ marginTop: "8px", fontSize: "0.9rem", opacity: "0.8" }}>
+              Developed by Hein Htet Moe Tun (Hyan) | Student ID: 6530394
             </p>
           </div>
         </footer>
