@@ -3,8 +3,8 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_HUB_USER = 'YOUR_DOCKERHUB_USERNAME'
-        IMAGE_NAME = 'todo-app'
+        DOCKER_HUB_USER = '6530394'
+        IMAGE_NAME = 'spending-tracker'
         DOCKER_HUB_CREDS = 'docker-hub-credentials'
     }
 
@@ -13,7 +13,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building the application...'
-                sh 'npm install || true'
+                sh 'npm install --legacy-peer-deps'
             }
         }
 
